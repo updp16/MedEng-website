@@ -1,0 +1,1068 @@
+body {
+  margin: 0;
+  padding: 0; 
+}
+body, html {
+  overflow-x: hidden;
+}
+
+.custom-home{
+  background-image: linear-gradient(#0094B5, rgba(0, 0, 0));
+}
+
+ul i{
+ margin-right: 5px;
+}
+
+/* Navbar adjustments */
+.custom-navbar {
+  background-color: rgba(255, 255, 255, 0.077); /* Adjust transparency here (0.6 = 60% opacity) */
+  width: 70%; /* Adjust width to your liking */
+  margin: auto; /* Center the navbar */
+  border-radius: 45px; /* Optional: Rounded corners for aesthetic */
+  z-index: 9999; 
+  font-family:'kanit-medium', sans-serif;
+  size: 30px;
+  position: absolute;
+  margin-top: 15px;
+ backdrop-filter: blur(10px);
+}
+
+
+/* Center the navbar items */
+.custom-container {
+  justify-content: center; /* Centers the navbar content */
+}
+/* Add padding to sections to avoid overlap */
+#home {
+  padding-top: 100px; /* Adjust if the navbar overlaps with content */
+}
+.nav-list{
+  margin-left: -20px;
+  width: 100%;
+}
+/* Optional Custom Styling for Dropdown */
+.navbar-nav .dropdown-menu {
+background-color: rgba(255, 255, 255, 0.1); /* Slight transparency */ 
+}
+.navbar-nav .dropdown-menu .dropdown-item {
+color: white; /* Black text color for dropdown items */
+}
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+background-color: #0094B5; /* Hover background */
+color: rgb(5, 5, 5); /* Hover text color */
+}
+
+/* Optional: Adjust the navbar-toggler color for small screens */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.7);
+  margin-left: 100%;
+}
+@media (max-width: 576px) {
+.custom-navbar{
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: -5;
+  
+}
+.navbar-toggler {
+  margin-left: 85%;
+}
+
+.navbar-nav .dropdown-menu {
+  text-align: center;
+  }
+
+  #title-image{
+    width: 70%;
+  }
+
+  .MedEng-Logo{
+    position: absolute;
+    z-index: 5;
+  }
+
+  .hero-title{
+    margin-top: 40px;
+  }
+
+  
+
+}
+
+
+.hero-custom-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  text-align: center;
+  flex-direction: column;
+}
+.hero-container-text{
+  display: block;
+  text-align: left;
+  font-family: 'almarai-extrabold', sans-serif;
+}
+.hero-container-text h1{
+  font-size: 60px;
+  font-weight: 600;
+  color: #fff;
+}
+.hero-container-image{
+ width: 57%;
+}
+.custom-hero-btn{
+  width: 150px;
+  font-family: 'almari-bold', sans-serif;
+  font-weight: 600;
+  color: black;
+  background-color: white;
+  border-radius: 45px;
+  border: 2px solid white;
+}
+.custom-hero-btn:hover{
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid white;
+}
+
+
+
+/* About Us */
+.about-us{
+  background-color: #000000;
+}
+.about-us h2{
+  font-family: 'almarai-bold', sans-serif;
+  font-size: 60px;
+}
+.about-us p{
+  font-family: 'almarai-regular', sans-serif;
+  font-size: 20px;
+}
+.more-button{
+  font-family: 'almarai-bold', sans-serif;
+  color: white;
+  background-color: black;
+  border-radius: 45px;
+  border-color: white;
+  width: 200px;
+  border: 2px solid rgb(255, 255, 255);  
+  transition: all 0.3s ease; /* Smooth transition */
+  padding: 10px;
+}
+.more-button:hover{
+  color:rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.993);
+  border: 2px solid white;
+}
+
+.arrow {
+  width: 50px;
+  height: 25px;
+  margin-left: 30px;
+  margin-right: -30px;
+  transition: transform 0.3s ease; 
+}
+.more-button:hover .arrow {
+  content: url('../images/Forward Arrow Black.png'); /* Change image on hover */
+  transform: rotate(45deg); /* Rotate image */
+  width: 50px;
+  height: 25px;
+}
+
+/* Featured Universities */
+#featured-universities{
+  background-color: #000000;
+  width: 100%;
+}
+#featured-universities h2{
+  font-family: 'almarai-bold', sans-serif;
+  font-size: 60px;
+  color: white;
+}
+.featured-universities-container{
+  display: flex;
+  justify-content: center;
+  max-width: 200%;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #ffffffb4;
+  padding: 50px;
+  height: 250px;
+}
+.featured-universities-container img{
+width: 100%;
+}
+/* Services */
+#services {
+  background-color: #000 !important;
+  padding: 50px 0;
+}
+.service-card {
+  height: 250px;
+  border-radius: 15px;
+  padding: 25px;
+  padding-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: left;
+  background-color: #222;
+}
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+@media (max-width: 576px) {
+  .service-card{
+    height: 320px
+  }
+}
+
+.service-icon {
+  width: 40px;
+  height: 40px;
+}
+.icon-container {
+  width: 70px; /* Increased size for the container */
+  height: 70px; /* Increased size for the container */
+  background-color: #ffffff07; /* Match the background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px; /* More rounded */
+  margin-bottom: 20px;
+  margin-left: 12px;
+}
+.icon-container img {
+  width: 60px; /* Adjust icon size */
+  height: 55px; /* Adjust icon size */
+}
+#services h3 {
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#services h2{
+  font-family: 'almarai-bold', sans-serif;
+  text-align: center;
+  font-size: 60px;
+  color: white;
+}
+#services .card-text {
+  font-family: 'Almarai-Regular', sans-serif;
+  font-size: 15px;
+  color: #cfcfcf;
+}
+
+/* Choose Dream Destination */
+.destination-container{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #000000;
+  width: 100%;
+}
+.destination-container h2{
+  font-family: 'almarai-bold', sans-serif;
+  font-size: 60px;
+  color: white;
+  margin-bottom: 40px;
+}
+.card {
+  background: #222;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  text-align: center;
+  height: 50%;
+  width:50%;
+  color: #fff;
+  box-shadow: 0vmax;
+}
+
+.card-image {
+  width: 100%;
+  height: 60%; /* 60% of the card for the image */
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.card h3 {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+}
+
+.card p {
+  font-size: 0.9em;
+  color: #555;
+}
+
+
+.card-button {
+  display: inline-block;
+  padding: 8px 12px;
+  margin-top: 10px;
+  background-color: #008ac000;
+  color: rgb(255, 255, 255);
+  border: 1px solid white;
+
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  width: 90%;
+}
+
+#carou-btn1.card-button:hover,#carou-btn2.card-button:hover {
+  background-color: rgb(65, 65, 65);
+  color: #fff;
+}
+
+#carou-btn1.card-button,
+#carou-btn2.card-button {
+  width: 20%;
+}
+
+@media (max-width: 576px) {
+  #carou-btn1.card-button,
+  #carou-btn2.card-button {
+  width: 90%;
+  }
+}
+
+
+
+/* Why MedEng Section */
+#why-medeng{
+  background-color: #000000;
+  width: 100%;
+  color: white;
+  font-family: 'almarai-bold', sans-serif;
+}
+#why-medeng h2{
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+#why-medeng .subtitle{
+  font-family: 'almarai-regular', sans-serif;
+  font-size: 20px;
+  margin-bottom: 80px;
+}
+#why-medeng .text{
+  font-family: 'almarai-regular', sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #AEAEAE;
+}
+#why-medeng img{
+  width: 70%;
+  height: 100%;
+}
+
+/* Testimonials */
+.testimonials-section {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  font-family: 'alamari-bold', sans-serif;
+}
+.testimonials-section h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+.intro-text {
+  font-size: 1rem;
+  color: #aaa;
+  margin-bottom: 40px;
+}
+.testimonial-card {
+  background-color: #333;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+}
+.testimonial-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+.testimonial-text {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+
+/* Consultation */
+#consultation {
+  background-color: #000000;
+  width: 100%;
+  color: white;
+  font-family: 'almarai-bold', sans-serif;
+}
+#consultation .container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  align-items: center;
+  justify-content: space-between;
+}
+#consultation h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.consultation-content {
+  max-width: 50%;
+  font-family: 'almarai-regular', sans-serif;
+}
+.consultation-img {
+  height: auto;
+  width: 300px;
+  height: 250px;
+  margin-right: 100px;
+}
+.consultation-btn {
+  font-family: 'almarai-bold', sans-serif;
+  color: white;
+  background-color: black;
+  border-radius: 45px;
+  border-color: white;
+  width: 200px;
+  border: 2px solid rgb(255, 255, 255);
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  padding: 10px;
+}
+.consultation-btn:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.993);
+  border: 2px solid white;
+}
+
+@media (max-width: 576px) {
+  .consultation-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.consultation-content {
+  max-width: 100%;
+}
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////// */
+.hero-container-text {
+  max-width: 100%; /* Adjusts text container width */
+}
+
+.hero-container-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .hero-container-text {
+    text-align: center;
+  }
+
+  .hero-container-image img {
+    max-width: 100%; /* Image scales down for smaller screens */
+  }
+}
+@media (max-width: 768px) {
+  .featured-universities-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel-slide {
+    width: 100%; /* Each carousel slide takes full width on mobile */
+    margin-bottom: 20px; /* Add some space between slides */
+  }
+
+  .carousel {
+    flex-direction: column;
+  }
+
+  .carousel-button {
+    display: none; /* Hide next/prev buttons on small screens */
+  }
+}
+/* About us section */
+@media (max-width: 768px) {
+  .about-us {
+    text-align: center;
+  }
+
+  .about-us-more-btn {
+    margin-top: 20px;
+  }
+}
+/*testimonials  */
+@media (max-width: 768px) {
+  .testimonials-section .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-card {
+    max-width: 100%; /* Testimonial card should take full width on mobile */
+  }
+}
+
+/* xx */
+@media (max-width: 768px) {
+  .consultation-content h2 {
+    text-align: center;
+  }
+
+  .consultation-content {
+    margin-bottom: 20px; /* Add margin between text and image on mobile */
+  }
+
+  .consultation-img {
+    width: 100%;
+  }
+}
+
+/* nav bar */
+/* Optional: Customize navbar collapse */
+@media (max-width: 768px) {
+  .nav-list {
+    justify-content: center; /* Center align for small devices */
+  }
+
+  .nav-item {
+    margin-left: 0 !important;
+    margin-bottom: 15px; /* Add spacing between nav items */
+  }
+}
+
+
+
+
+
+
+/* About us page */
+
+/* Hero section with image and gradient overlay */
+.hero {
+  position: relative;
+  background: url('../../Assets/images/aboutus.png') no-repeat center center; 
+  background-size: cover; 
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background: linear-gradient(180deg, #0094B5, #000000);
+  opacity: 0.8; /* Adjust the opacity */
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+
+
+/* About Section */
+.black-bg{
+  background-color: #000;
+}
+.about p {
+  max-width: 800px;
+  margin: 0;
+}
+.about h2{
+  margin: 10px 0 30px;
+}
+.MedEng-logo-about img{
+  max-width: 250px;
+}
+
+/* Right-side cards for Vision and Mission */
+
+.expand-btn {
+  font-size: 20px; /* Reduced button size */
+  padding: 8px 16px; /* Smaller padding on the button */
+}
+/* Optional: Hover effect */
+.expand-btn:hover {
+  background-color: #3c3c3c;
+}
+
+
+
+#expandable-content {
+  height: auto; /* Allow the content to be fully visible */
+  overflow: hidden;
+  transition: height 0.5s ease; /* Smooth transition */
+}
+#expandable-content.collapsed {
+  height: 0;
+  overflow: hidden;
+}
+
+
+
+/* Expandable cards */
+.top-section{
+  display: flex;
+}
+.text-button-container {
+  background-color: #1c1c1c; /* Dark background for the entire block */
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #ffffff;
+  width: 50%;
+}
+
+@media (max-width: 576px) {
+  .text-button-container{
+    margin-top: 20px;
+    width: 65%;
+  }
+  .MedEng-logo-about img{
+    max-width: 150px;
+    margin-bottom: 70px;
+  }
+}
+
+.text-part{
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: auto; /* Pushes the button to the right */
+}
+
+
+/* service section */
+.services-section {
+  position: relative;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.service-item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.service-item {
+  display: flex;
+  align-items:center;
+  justify-content: center; /* Center the items horizontally */
+  margin-bottom: 50px;
+  position: relative;
+  opacity: 0;  /* Start invisible */
+  transform: translateY(20px); /* Start slightly below */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  width: 100%; /* Use full width */
+  max-width: 800px; /* Optional: Limit max width to center content nicely */
+}
+
+.service-item.active {
+  opacity: 1; /* Fade in */
+  transform: translateY(0); /* Move to original position */
+}
+
+.service-number {
+  font-size: 2.5em;
+  color: #00e1ff;
+  margin-right: 20px;
+  position: relative;
+  width: 50px;
+  text-align: center;
+}
+
+/* Vertical line that runs through the middle of the numbers */
+.service-number::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 2px;
+  background-color: #00e1ff;
+  height: 0; /* Initially set to 0 */
+  transition: height 0.6s ease-out;
+}
+
+.service-item.active .service-number::before {
+  height: 50px; /* Extend the line to connect the numbers */
+}
+
+/* The last number doesn't have a line after it */
+.service-item:last-child .service-number::before {
+  display: none;
+}
+
+.service-content {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.service-content h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.service-content p {
+  font-size: 1em;
+  color: #ccc;
+}
+
+/* policy section */
+.quality-policy-section {
+  padding: 50px 0;
+  background-color: #000; /* Dark background */
+  color: #fff; /* White text */
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.quality-policy-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.quality-policy-image {
+  flex-basis: 30%; /* Image takes 30% of the space */
+  text-align: center;
+}
+
+.quality-policy-image img {
+  max-width: 50%; 
+  border-radius: 8px;
+}
+
+.quality-policy-image p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.quality-policy-text {
+  flex-basis: 65%; /* Text takes 65% of the space */
+  text-align: left;
+}
+
+.quality-policy-text p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+
+/* country page */
+
+.country-section {
+padding: 50px 0;
+background: linear-gradient(#0094B5 30%,#000000 75%,#000000 100%);;
+color:white;
+
+}
+.country-container-text{
+display: block;
+font-family: 'almarai-extrabold', sans-serif;
+}
+.country-container-text h1{
+font-size: 70px;
+font-weight: 600;
+color: #fff;
+padding-bottom: 50px;
+}
+.country-intro-container{
+  width: 75%;
+}
+.country-image-container {
+overflow: hidden;
+}
+.country-image-container img {
+width: 300px;
+height: 300px;
+object-fit: cover;
+object-position: center;
+border-radius: 50%;
+}
+.description {
+font-size: 1.1rem;
+line-height: 1.6;
+max-width: 500px;
+justify-content: left;
+margin: 0 auto;
+margin-left: 0px;
+text-align: left;
+padding-top: 20px;
+}
+.country-name{
+ text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);;
+}
+
+
+
+
+/* Country Info section */
+.expandable-text-country{
+text-align: left;
+}
+
+.container1{
+margin-top: 150px;
+}
+
+@media (max-width: 576px) {
+.container2{
+  width: 90%;
+}
+.country-section p{
+  width: 80%;
+}
+.country-image-container img {
+  margin: auto;
+}
+.description{
+  text-align: center;
+  align-items: center;
+}
+}
+
+/* university section */
+
+.card-button img{
+margin-left: 0%;
+}
+.u-card{
+width: 40%;
+}
+
+.u-card-left{
+  margin-left: 400px;
+}
+
+.u-card-right{
+  margin-left: 45px;
+}
+
+.uni-image{
+width: 90%;
+}
+@media (max-width: 576px) {
+.u-card{
+  width: 70%;
+}
+.u-card-left,.u-card-right{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+}
+
+/* footer */
+.footer-logo{
+display: block;
+width: 5%;
+}
+footer h5 {
+font-size: 1.2rem;
+font-weight: bold;
+}
+footer ul {
+padding-left: 0;
+}
+footer ul li {
+margin-bottom: 10px;
+}
+footer ul li a {
+text-decoration: none;
+color: white;
+transition: color 0.3s;
+}
+footer ul li a:hover {
+color: #d3d3d3;
+}
+footer address {
+line-height: 1.6;
+}
+footer .bi {
+font-size: 1.5rem;
+transition: color 0.3s;
+}
+footer .bi:hover {
+color: #d3d3d3;
+}
+@media (max-width: 576px) {
+.footer-logo{
+  width: 10%;
+}
+}
+
+/* Responsive font sizes for Hero Section */
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+}
+.centered {
+  text-align: center;
+  flex: 1; /* This makes the content take up the available space */
+}
+
+/* For small screens */
+@media (max-width: 576px) {
+  .hero {
+    height: 300px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+}
+
+
+/* ContactUs page */
+.hero2 {
+  position: relative;
+  background: url('contactUs.png') no-repeat center center; 
+  background-size: cover; 
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: -2;
+  
+}
+
+.hero2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #0094B5, #000000);
+  opacity: 0.8; /* Adjust the opacity */
+  z-index: -1;
+}
+
+.hero2 .container {
+  position: relative;
+  z-index: 0;
+}
+
+.custom-form {
+  background-color: #1c1c1c; /* Black background with transparency */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  width: 60%;
+  transform: translateY(-100px);
+  z-index: 3;
+}
+
+.contactUs-form{
+text-align: left;
+}
+
+/* Headline styling */
+.custom-form h3 {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.custom-form button{
+text-align: center;
+}
+
+/* Input field labels */
+.form-label {
+  color: white;
+}
+/* Placeholder text color */
+::placeholder {
+  color: #ccc;
+}
+
+
+/* Button hover effect */
+#submit-btn.custom-button{
+  color: white; background-color: #3f3c3c; border: 2px solid white; border-radius: 50px;
+}
+
+#submit-btn.custom-button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+/* Input field styles */
+.form-control {
+  background-color: #333;
+  border: none;
+  color: white;
+}
+.form-control:focus {
+  box-shadow: none;
+  border: 1px solid #0094B5; /* Optional: Add focus color */
+}
+
+
+
+/* Responsive adjustment for small screens */
+@media (max-width: 576px) {
+  .custom-form {
+      width: 80%; /* Adjust form width for small screens */
+      padding: 20px;
+  }
+  .hero2{
+    height: 300px;
+  }
+
+}
+
+
+
+
+

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MedEng - About Us</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/40b5c9c6eb.js" crossorigin="anonymous"></script>
+  
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./Assets/css/style.css">
+ 
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- GSAP and ScrollTrigger for animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+
+</head>
+
+
+
+
+<body>
+   <!-- MedEng Logo (outside of the navbar) -->
+     
+   <div class="container d-flex justify-content-left align-items-left mt-1 bg-transparent fixed-top navbar-container">
+    <div><span class="MedEng-Logo"><img style="max-width: 180px;" src="./Assets/images/logoNew1.png" alt="logo"></span></div>
+    
+
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+        <div class="container custom-container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>  
+            <div class="collapse navbar-collapse justify-content-center nav-list" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item ms-5"><a class="nav-link" href="./index.html">HOME</a></li>
+                    <li class="nav-item ms-5"><a class="nav-link active" href="#about-us">ABOUT US</a></li>
+                    
+                    <!-- Dropdown for COUNTRIES -->
+                    <li class="nav-item dropdown ms-5">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            COUNTRIES
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./England.html">United Kingdom</a></li>
+                            <li><a class="dropdown-item" href="./Finland.html">Finland</a></li>
+                        </ul>
+                    </li>
+                    
+                    
+                    <li class="nav-item ms-5"><a class="nav-link" href="./ContactUs.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+</div>
+  
+  <!-- Hero Section with Image and Gradient Overlay -->
+  <section class="hero d-flex align-items-center">
+    <div class="container text-center text-white hero-container-text-aboutPg container-hero" style="padding-top: 100px;">
+      <h1 class="hero-title" style="font-size: 4.375rem; font-family: 'almarai-extrabold', sans-serif; color:white; font-weight: 600;">Welcome to MedEng</h1>
+      <span class="MedEng-logo-about"><img src="./Assets/images/logoNew1.png" alt="logo"></span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about text-white py-5 centered black-bg">
+    <h2>About Our Agency</h2>
+    <div class="container">
+      <div class="row">
+        <!-- Left Column: About Our Agency -->
+        <div class="col-md-6">
+          
+          <p class="about-info">
+            <em><b><span style="color: #00F0FF;">MedEng Education Consultancy Pvt Ltd</span> </b></em> is a Reputed education consultancy firm, offering comprehensive guidance for international education opportunities. We help students turn their dream of studying abroad into a reality. Our services delivered by highly qualified experts who have successfully navigated their higher educational dreams. <br> <br>
+            Our core mission is to provide top-tier educational and visa consulting, connecting students with the right course, university, and country to ensure a successful career path. We make overseas education both affordable and accessible. Also, we guide students through every step of the process.
+  
+      
+          </p>
+        </div>
+
+        <!-- Right Column: Vision and Mission -->
+        <div class="col-md-6 centered">
+          <div class="row text-center">
+
+            <div class="col-md-12 mb-4">
+                <div class="text-button-container mx-auto"style="background: linear-gradient(to bottom, #19c5ec, #014661)" >
+                    <div class="top-section">
+                      <div class="text-part" style="font-size: 20px">Our Vision</div>
+                      <button class="expand-btn btn btn-dark" id="toggle-btn"  style="background: linear-gradient(to bottom, #00F0FF, #014661);">
+                        <i id="icon" class="bi bi-plus icon1"></i>
+                      </button>
+                    </div>
+                  
+                    
+                    <div id="expandable-content" class="expandable-text collapsed">
+                      <p>
+                        "To be a leading global education consultancy company that supports students with aspirations to study overseas, aiding them in realizing their dreams through accurate guidance and study choices."
+                      </p>
+                    </div>
+                </div>
+                  
+              </div>
+            </div>
+
+
+            <div class="col-md-12 mb-4">
+                <div class="text-button-container mx-auto" style="background: linear-gradient(to bottom, #00F0FF, #014661);">
+                    <div class="top-section">
+                      <div class="text-part" style="font-size: 20px;">Our Mission</div>
+                      <button class="expand-btn btn btn-dark" id="toggle-btn"style="background: linear-gradient(to bottom, #19c5ec, #014661)">
+                        <i id="icon" class="bi bi-plus icon1"></i>
+                      </button>
+                    </div>
+                  
+                    
+                    <div id="expandable-content" class="expandable-text collapsed">
+                      <p>
+                        "To provide expert, reliable guidance to students, helping them make informed education choices, while supporting partner universities by connecting them with highly qualified, motivated students."
+                      </p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why us section -->
+  <section class="services-section black-bg text-white py-5 centered why-us" id="our-services">
+    <h2>We Assist You With</h2>
+    <div class="service-item-container" style="margin-top: 30px;">
+      <div class="service-item">
+        <div class="service-number">01</div>
+        <div class="service-content">
+          <h3>Selecting the best course and university tailored to your goals</h3>
+        </div>
+      </div>
+  
+      <div class="service-item">
+        <div class="service-number">02</div>
+        <div class="service-content">
+          <h3>Understanding and meeting entry requirements</h3>
+        </div>
+      </div>
+  
+      <div class="service-item">
+        <div class="service-number">03</div>
+        <div class="service-content">
+          <h3>Assisting with documentation</h3>
+        </div>
+      </div>
+  
+      <div class="service-item">
+        <div class="service-number">04</div>
+        <div class="service-content">
+          <h3>Guiding you through the visa process</h3>
+        </div>
+      </div>
+    </div>
+
+    <p style="display: inline-block; width: 50%;">At MedEng, we ensure that students receive personalized, step-by-step support from start to finish, 
+      making their higher education journey smooth and successful.</p>
+  </section>
+  
+
+  <!-- Policy section -->
+  <!-- <section class="quality-policy-section black-bg text-white py-5">
+    <div class="container">
+      <h2>Our Quality Policy</h2>
+      <div class="quality-policy-content">
+        <div class="quality-policy-image">
+          <img src="./Assets/images/manager.png" alt="Managing Director" />
+          <p>Managing Director</p>
+        </div>
+        <div class="quality-policy-text">
+          <p>
+            Australian Business Education Centre (Pvt) Ltd is a professional education consultancy firm in Colombo, Sri Lanka providing excellent educational consultancy services related to higher education in world class institutions. We always strive to achieve best services to all our Customers.
+          </p>
+          <p>
+            Our focus is to exceed customer satisfaction in a student centred approach, while delivering quality students to our Foreign Principles. We dedicate all our experiences and resources professionally to ensure that students interested in pursuing higher education reach their highest potential in a smooth way, by providing them the reliable and most relevant information and guidance. Alternatively, we are dedicated to portray the partnering institutes accurately and in an ethical manner, while maintaining their quality standards.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+     <!-- Footer Section -->
+
+     <footer class="text-white py-4" style="background: linear-gradient(to bottom, #000000, #0094B5);padding-top: 50px;">
+      <div class="container">
+          <img src="./Assets/images/logoNew1.png" alt="Logo" class="img-fluid me-2 footer-logo" style="width: 180px;margin-left: -45px;"> 
+          <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+          
+            <ul class="list-unstyled">
+              <li><a href="./AboutUs.html" class="text-white">About Us</a></li>
+              <li><a href="#" class="text-white">Our Services</a></li>
+              <li><a href="./ContactUs.html" class="text-white">Contact</a></li>
+            </ul>
+          </div>
+          
+  
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h5><i class="fa-solid fa-phone" style="color:  #00ffae;"></i> +447398826484</h5>
+            <h5><i class="fa-brands fa-whatsapp" style="color:  #00ffae;"></i> +447398826484</h5>
+            <h5><i class="fa fa-envelope-o" style="color: #00ffae;"></i> info@medeng.co.uk</h5>
+            <h5><i class="fa fa-envelope-o" style="color: #00ffae;"></i> info@parthtouk.com</h5>
+            
+          </div>
+          
+  
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h5>Home Office</h5>
+            <address>
+              67 Langney Road,<br>
+              Eastbourne,<br>
+              East Sussex, <br>
+              England <br>
+              BN213QD
+
+            </address>
+          </div>
+        </div>
+  
+  
+  
+        <div class="row mt-4">
+          <div class="col text-center">
+            <!-- Social Links -->
+            <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col text-center">
+            <p>© 2024 MedEng</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script>
+      // Animate Hero Section Text and Image
+      gsap.from('.hero-container-text-aboutPg h1', {
+        duration: 1.5,
+        opacity: 0,
+        y: -50,
+        ease: 'power2.out',
+        delay: 0.3
+      });
+      
+      gsap.from('.about .about-info, .about .text-button-container', {
+            scrollTrigger: {
+                trigger: '.about',
+                start: 'top 80%',
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1.5,
+            ease: 'power2.out',
+        });
+
+        gsap.from('.about h2, why-us h2', {
+            scrollTrigger: {
+                trigger: '.about, .why-us',
+                start: 'top 80%',
+            },
+            y: -50,
+            opacity: 0,
+            duration: 1.5,
+            ease: 'power2.out',
+        });
+
+        gsap.from('.why-us h2', {
+            scrollTrigger: {
+                trigger: '.why-us',
+                start: 'top 80%',
+            },
+            y: -50,
+            opacity: 0,
+            duration: 1.5,
+            ease: 'power2.out',
+        });
+    </script>
+  
+  
+
+  <!-- Bootstrap JS -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./Assets/script/script.js"></script>
+</body>
+</html>

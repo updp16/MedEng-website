@@ -1,0 +1,336 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MedEng - Landing Page</title>
+    <script src="https://kit.fontawesome.com/40b5c9c6eb.js" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./Assets/css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- GSAP and ScrollTrigger for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+</head>
+<body style="background-color: #000000;">
+
+    <!-- MedEng Logo (outside of the navbar) -->
+    <div class="container d-flex justify-content-left align-items-left mt-1 bg-transparent fixed-top navbar-container">
+        <span class="MedEng-Logo"><img style="max-width: 180px;" src="./Assets/images/logoNew1.png" alt="logo"></span>
+        
+        <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
+            <div class="container custom-container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>  
+                <div class="collapse navbar-collapse justify-content-center nav-list" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ms-5"><a class="nav-link active" href="./index.html">HOME</a></li>
+                        <li class="nav-item ms-5"><a class="nav-link" href="#about-us">ABOUT US</a></li>
+                        <li class="nav-item dropdown ms-5">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                COUNTRIES
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./England.html">United Kingdom</a></li>
+                                <li><a class="dropdown-item" href="./Finland.html">Finland</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ms-5"><a class="nav-link" href="./ContactUs.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="text-light text-left custom-home py-5 position-relative">
+        <div class="container pt-5 hero-custom-container d-flex flex-column flex-lg-row">
+            <div class="hero-container-text">
+                <h1>We Help to <span style="color:#00F0FF;">Build</span></h1>
+                <h1>Your Dream</h1>
+                <p class="lead">We help students to make their dream of studying abroad a reality.</p>
+                <a href="./ContactUs.html" class="btn btn-outline-light btn-lg custom-hero-btn">Contact Us</a>
+            </div>
+            <div class="mt-5 hero-container-image" id="title-image">
+                <img src="assets/images/hero-image.png" class="img-fluid" alt="Graduates">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us" class="py-5 text-light text-center about-us">
+        <div class="container">
+            <h2 class="display-5">About Us</h2>
+            <p class="lead"><span style="font-weight: bold; color: #00F0FF;">MedEng Education Consultancy Pvt Ltd</span> is a Reputed education consultancy firm, offering comprehensive guidance for international education opportunities</p>
+            <a href="./AboutUs.html" class="btn more-button">More <img class="arrow" src="assets/images/Forward Arrow.png" /></a>
+        </div>
+    </section>
+
+    <!-- What We Are Offering Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="display-5 mb-5">What we are offering</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="service-card bg-dark text-light mb-4 p-3">
+                        <div class="align-items-center">
+                            <div class="icon-container">
+                                <img src="assets/icons/customer-service-icon.png" alt="Customer Service Icon" class="service-icon">
+                            </div>
+                            <div class="ms-3 text-left">
+                                <h3 class="card-title">Customer Service</h3>
+                                <p class="card-text">We offer expert guidance to help students select the right academic programs, manage applications, and navigate the student visa process.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-card bg-dark text-light mb-4 p-3">
+                        <div class="align-items-center">
+                            <div class="icon-container rounded-icon">
+                                <img src="assets/icons/trusted-service-icon.png" alt="Trusted Service Icon" class="service-icon">
+                            </div>
+                            <div class="ms-3 text-left">
+                                <h3 class="card-title">Trusted Service</h3>
+                                <p class="card-text">Our reliable service starts from the very beginning to ensure efficiency for you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Choose Your Dream Destination Section -->
+<section class="black-bg text-white py-5 centered" id="dream-dest">
+    <div class="container destination-container">
+        <h2 class="display-6">Choose Your Dream Destination</h2>
+    </div>
+
+    <div id="testimonials-carousel" class="carousel slide">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active container-fluid item">
+
+          <div class="card mx-auto">
+            <img src="assets/images/England.png" alt="Slide 1" class="card-image">
+            <div class="card-content">
+                <h3>England</h3>
+                <a href="./England.html" class="card-button" id="carou-btn1">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item container-fluid item">
+
+          <div class="card mx-auto">
+            <img src="./Assets/images/Finland.png" alt="Slide 1" class="card-image">
+            <div class="card-content">
+                <h3>Finland</h3>
+                <a href="./Finland.html" class="card-button" id="carou-btn2">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+ 
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonials-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonials-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>  
+
+  </section>
+
+
+
+    <!-- Why MedEng Section -->
+    <section id="why-medeng" class="py-5 text-center">
+        <div class="container">
+            <h2 class="display-5">Why MedEng?</h2>
+            <p class="lead subtitle">Study overseas with us as we guide you through the right path.</p>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                <p class="text-start text">
+                    <span style="font-weight: bold; color: #00F0FF;">MedEng Education Consultancy Pvt Ltd</span> is a world-renowned expert in student counselling,
+                    specializing in international education and study abroad opportunities. Our mission is to help
+                    students turn their aspirations of studying overseas into reality. As a prestigious Educational Visa
+                    Consultancy, we are dedicated to matching students with the best programs, universities, and
+                    countries to set them on the path to a successful career.
+                </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/images/logoNew1.png" class="img-fluid" alt="Why MedEng `aq" style="width: 100%;height: 100%;margin-top: -20px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Testimonials Section
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h1>Testimonials</h1>
+            <p class="intro-text">Torquem detraxit hosti et quidem faciunt, ut et negent satis esse appetendum, alterum. Si sine causa? quae fuerit causa, mox videro; interea hoc epicurus in liberos.</p>
+
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <img src="assets/images/student1.png" alt="Graduate Photo" class="testimonial-img">
+                        <p class="testimonial-text">Torquem detraxit hosti et quidem faciunt, ut et negent satis esse appetendum, alterum. Si sine causa? quae fuerit causa, mox videro; interea hoc epicurus in liberos.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <img src="assets/images/student2.png" alt="Student Photo" class="testimonial-img">
+                        <p class="testimonial-text">Torquem detraxit hosti et quidem faciunt, ut et negent satis esse appetendum, alterum. Si sine causa? quae fuerit causa, mox videro; interea hoc epicurus in liberos.</p>
+                    </div>
+                </div>
+            </div>
+
+           
+        </div>
+    </section> -->
+
+    <!-- Consultation Section -->
+    <section id="consultation" class="py-5 text-left">
+        <div class="container d-flex align-items-center justify-content-between consultation-container">
+            <div class="consultation-content">
+                <h2>Start climbing your career ladder with us</h2>
+                <a href="./ContactUs.html" class="btn consultation-btn">Book Consultation</a>
+            </div>
+            <div>
+                <img src="assets/images/help.png" alt="help" class="consultation-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="text-white py-4" style="background: linear-gradient(to bottom, #000000, #0094B5);padding-top: 50px;">
+        <div class="container">
+            <img src="./Assets/images/logoNew1.png" alt="Logo" class="img-fluid me-2 footer-logo" style="width: 180px;margin-left: -45px;"> 
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <ul class="list-unstyled">
+                        <li><a href="./AboutUs.html" class="text-white">About Us</a></li>
+                        <li><a href="#" class="text-white">Our Services</a></li>
+                        <li><a href="./ContactUs.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5><i class="fa-solid fa-phone" style="color:  #00ffae;"></i> +447398826484</h5>
+                    <h5><i class="fa-brands fa-whatsapp" style="color:  #00ffae;"></i> +447398826484</h5>
+                    <h5><i class="fa fa-envelope-o" style="color: #00ffae;"></i> info@medeng.co.uk</h5>
+                    <h5><i class="fa fa-envelope-o" style="color: #00ffae;"></i> info@parthtouk.com</h5>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5>Home Office</h5>
+                    <address>
+                        67 Langney Road,<br>
+                        Eastbourne,<br>
+                        East Sussex,<br>
+                        England<br>
+                        BN213QD
+                    </address>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col text-center">
+                    <p>© 2024 MedEng</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Animations Script -->
+    <script>
+        // Animate Hero Section Text and Image
+        gsap.from('.hero-container-text h1', {
+            duration: 1.5,
+            y: -50,
+            opacity: 0,
+            ease: 'power2.out',
+            stagger: 0.2
+        });
+
+        gsap.from('.hero-container-text p, .custom-hero-btn', {
+            duration: 2,
+            y: 50,
+            opacity: 0,
+            ease: 'power2.out',
+            delay: 1
+        });
+
+        gsap.from('#title-image img', {
+            duration: 1.5,
+            x: 100,
+            opacity: 0,
+            ease: 'power2.out',
+            delay: 0.8
+        });
+
+        // Small Animation for About Us Section Text
+        gsap.from('#about-us h2', {
+            scrollTrigger: {
+                trigger: '#about-us',
+                start: 'top 80%',
+            },
+            y: -50,
+            opacity: 0,
+            duration: 1.5,
+            ease: 'power2.out',
+        });
+
+        gsap.from('#about-us p', {
+            scrollTrigger: {
+                trigger: '#about-us',
+                start: 'top 80%',
+            },
+            x: -100,
+            opacity: 0,
+            duration: 1.5,
+            ease: 'power2.out',
+        });
+
+        // Scroll Animations for other sections to slowly appear
+        gsap.utils.toArray('section').forEach(section => {
+            gsap.from(section, {
+                scrollTrigger: {
+                    trigger: section,
+                    start: 'top 90%',
+                    toggleActions: 'play none none none',
+                },
+                opacity: 0,
+                y: 50,
+                duration: 1.5,
+                ease: 'power2.out'
+            });
+        });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <script src="./Assets/script/script.js"></script>
+</body>
+</html>

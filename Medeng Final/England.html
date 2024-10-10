@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedEng - UK Section</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/40b5c9c6eb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+    <!-- ABEC Logo (outside of the navbar) -->
+    <div class="container d-flex justify-content-left align-items-left mt-1 bg-transparent fixed-top navbar-container">
+      <span class="abec-logo"><img style="max-width: 180px;" src="./Assets/images/logoNew1.png" alt="logo"></span>    
+    
+        <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
+          <div class="container custom-container">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>  
+              <div class="collapse navbar-collapse justify-content-center nav-list" id="navbarNav">
+                  <ul class="navbar-nav">
+                      <li class="nav-item ms-5"><a class="nav-link" href="./index.html">HOME</a></li>
+                      <li class="nav-item ms-5"><a class="nav-link" href="./AboutUs.html">ABOUT US</a></li>
+                      
+                      <!-- Dropdown for COUNTRIES -->
+                      <li class="nav-item dropdown ms-5">
+                          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              COUNTRIES
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">United Kingdom</a></li>
+                            <li><a class="dropdown-item" href="./Finland.html">Finland</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item ms-5"><a class="nav-link" href="./ContactUs.html">CONTACT US</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+    </div>
+
+    <!-- Country Section -->
+    <section class="country-section text-center">
+        <div class="container1 country-container-text">
+            <h1 class="country-name">United Kingdom</h1>
+            <div class="country-intro-container mx-auto">
+              <div class="row">
+                <div class="country-image-container col-lg-6 col-sm-12">
+                  <img src="./Assets/images/England.png" alt="England" class="img-fluid rounded-circle">
+              </div>
+              <div class="description mt-4 col-lg-6 col-sm-12">
+                <p class="mx-auto">
+                  United Kingdom England is a distinctive location on the planet that provides a diverse multicultural environment. Some of the world's oldest and most renowned universities are located here, boasting vast campuses, top-notch infrastructure, and high-quality education that prepares you for a prosperous future.
+                </p>
+              </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Country Info Section -->
+    <section class="countryInfo-section black-bg text-white py-5 centered">
+      <!-- Why study in UK -->
+      <div class="text-button-container mx-auto container2">
+        <div class="top-section">
+          <div class="text-part mx-auto"><h2 class="mx-auto">Why Study in UK?</h2></div>
+          <button class="expand-btn btn btn-dark" id="toggle-btn">
+            <i id="icon2" class="bi bi-plus icon1"></i>
+          </button>   
+        </div>
+        <div id="expandable-content" class="expandable-text expandable-text-country collapsed">
+            <ul class="list-unstyled mt-4">
+                <li class="mb-3">
+                  <i class="fa-solid fa-earth-europe"></i> Global center for learning for over a century.
+                </li>
+                <li class="mb-3">
+                  <i class="fa-brands fa-cc-visa"></i> Simple visa regulations for students from abroad.
+                </li>
+                <li class="mb-3">
+                  <i class="bi bi-collection-fill"></i> Wide variety of courses with extensive range of specialization options.
+                </li>
+                <li class="mb-3">
+                  <i class="fa-solid fa-building"></i> Bachelor students with a one-year internship in the industry.
+                </li>
+                <li class="mb-3">
+                  <i class="fa-solid fa-circle-check"></i> International students studying at UK institutions do not need permission from the job center to work part-time or during holidays
+                </li>
+              </ul>
+        </div>
+    </div>
+
+<!-- Other Sections like Quick Facts, Requirements, Work Rights, Intakes... -->
+<div class="text-button-container mx-auto container2" style="margin-top: 30px;">
+  <div class="top-section">
+    <div class="text-part mx-auto"><h2 class="mx-auto">Quick Facts</h2></div>
+    <button class="expand-btn btn btn-dark" id="toggle-btn">
+      <i id="icon2" class="bi bi-plus icon1"></i>
+    </button>
+  </div>
+  <div id="expandable-content" class="expandable-text expandable-text-country collapsed">
+      <ul class="list-unstyled mt-4">
+          <li class="mb-3">
+            <i class="fa-solid fa-users"></i> Population: 63.23 million 
+          </li>
+          <li class="mb-3">
+            <i class="fa-solid fa-sack-dollar"></i> GDP - $2.435 trillion
+          </li>
+          <li class="mb-3">
+            <i class="fa-solid fa-tree-city"></i> Capital City: London
+          </li>
+          <li class="mb-3">
+            <i class="fa-solid fa-tree-city"></i> Largest City: London
+          </li>
+          <li class="mb-3">
+            <i class="fa-solid fa-language"></i> Official Language: English
+          </li>
+          <li class="mb-3">
+            <i class="fa-solid fa-sterling-sign"></i> Currency: Pound Sterling (GBP)
+
+          </li>
+        </ul>
+  </div>
+</div>
+<!-- requirements -->
+<div class="text-button-container mx-auto container2" style="margin-top: 30px;">
+  <div class="top-section">
+    <div class="text-part mx-auto"><h2 class="mx-auto">Requirements</h2></div>
+    <button class="expand-btn btn btn-dark" id="toggle-btn">
+      <i id="icon2" class="bi bi-plus icon1"></i>
+    </button>
+  </div>
+
+  
+  <div id="expandable-content" class="expandable-text expandable-text-country collapsed" style="display: block">
+      <ul class="list-unstyled mt-4">
+          <li class="mb-3">
+            <i class="fa-solid fa-book-open"></i>  AL's or above
+          </li>
+          <li class="mb-3">
+            <i class="fa-solid fa-comment"></i> IELTS 5.0 Each Band & 6.0 Overall
+          </li>
+        </ul>
+  </div>
+</div> 
+<!-- Work Rights -->
+<div class="text-button-container mx-auto container2" style="margin-top: 30px;">
+  <div class="top-section">
+    <div class="text-part mx-auto"><h2 class="mx-auto">Work Rights</h2></div>
+    <button class="expand-btn btn btn-dark" id="toggle-btn">
+      <i id="icon2" class="bi bi-plus icon1"></i>
+    </button>
+  </div>
+
+  
+  <div id="expandable-content" class="expandable-text expandable-text-country collapsed" style="display: block">
+      <ul class="list-unstyled mt-4">
+          <li class="mb-3">
+            <i class="fa-solid fa-clock"></i>  20 hours per week
+          </li>
+          <li class="mb-3">
+            <i class="fa-regular fa-clock"></i> 40 hours during vacation
+          </li>
+        </ul>
+  </div>
+</div>
+
+<!-- Intakes -->
+<div class="text-button-container mx-auto container2" style="margin-top: 30px;">
+  <div class="top-section">
+    <div class="text-part mx-auto"><h2 class="mx-auto">Intakes</h2></div>
+    <button class="expand-btn btn btn-dark" id="toggle-btn">
+      <i id="icon2" class="bi bi-plus icon1"></i>
+    </button>
+  </div>
+
+  
+  <div id="expandable-content" class="expandable-text expandable-text-country collapsed" style="display: block">
+      <ul class="list-unstyled mt-4">
+          <li class="mb-3">
+            <i class="fa-solid fa-calendar-days"></i>  January /February/September/November
+          </li>
+        </ul>
+  </div>
+</div>
+</section>
+<!-- University Section -->
+
+<!-- <section class="university-section black-bg text-white py-5 centered">
+  <h2 class="text-center text-white mb-4">Universities</h2>
+  <div class="row"> -->
+    <!-- University Card 1 -->
+    <!-- <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+      <div class="card text-center bg-dark text-white p-3 h-100 u-card u-card-left">
+        <img src="./Assets/images/AngliaRuskin.png" class="card-img-top mx-auto uni-image" alt="Anglia Ruskin University">
+        <div class="card-body">
+          <h5 class="card-title">Anglia Ruskin University</h5>
+          <a href="destination3.html" class="card-button more-button">More Details<img class="arrow" src="assets/images/Forward Arrow.png" /></a>
+        </div>
+      </div>
+    </div> -->
+    <!-- Other University Cards... -->
+  <!-- </div>
+</section> -->
+
+<!-- Footer Section -->
+<footer class="text-white py-4" style="background: linear-gradient(to bottom, #000000, #0094B5);padding-top: 50px;">
+  <div class="container">
+      <img src="./Assets/images/logoNew1.png" alt="Logo" class="img-fluid me-2 footer-logo" style="width: 180px;margin-left: -45px;"> 
+      <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <ul class="list-unstyled">
+          <li><a href="./AboutUs.html" class="text-white">About Us</a></li>
+          <li><a href="#" class="text-white">Our Services</a></li>
+          <li><a href="./ContactUs.html" class="text-white">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <h5><i class="fa-solid fa-phone" style="color:  #00ffae;"></i> +447398826484</h5>
+        <h5><i class="fa-brands fa-whatsapp" style="color:  #00ffae;"></i> +447398826484</h5>
+        <h5><i class="fa fa-envelope-o" style="color: #00ffae;"></i> info@medeng.co.uk</h5>
+        <h5><i class="fa fa-envelope-o" style="color: #00ffae;"></i> info@parthtouk.com</h5>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <h5>Home Office</h5>
+        <address>
+          67 Langney Road,<br>
+          Eastbourne,<br>
+          East Sussex, <br>
+          England <br>
+          BN213QD
+        </address>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col text-center">
+        <!-- Social Links -->
+        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col text-center">
+        <p>© 2024 MedEng</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- GSAP Animations -->
+<script>
+  // Animating the country section title and image
+  gsap.from('.country-name', {
+    duration: 1.5,
+    y: -50,
+    opacity: 0,
+    ease: 'power2.out',
+    delay: 0.5
+  });
+
+  // gsap.from('.country-image-container img', {
+  //   duration: 1.5,
+  //   scale: 0.8,
+  //   opacity: 0,
+  //   ease: 'elastic.out(1, 0.3)',
+  //   delay: 1
+  // });
+  gsap.from('.country-image-container img', {
+    scrollTrigger: {
+      trigger: '.country-section',
+      start: 'top 85%',
+    },
+    opacity: 0,
+    x: -50,
+    duration: 1.5,
+    ease: 'power2.out',
+    delay: 0.3
+  });
+  // Animating the text containers
+  gsap.from('.description', {
+    scrollTrigger: {
+      trigger: '.country-section',
+      start: 'top 85%',
+    },
+    opacity: 0,
+    x: 50,
+    duration: 1.5,
+    ease: 'power2.out',
+    delay: 0.3
+  });
+
+  // Animating university cards as they come into view
+  gsap.from('.u-card', {
+    scrollTrigger: {
+      trigger: '.university-section',
+      start: 'top 85%',
+    },
+    opacity: 0,
+    y: 30,
+    duration: 1.5,
+    ease: 'power2.out',
+    stagger: 0.3
+  });
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+<script src="./Assets/script/script.js"></script>
+</body>
+</html>
