@@ -73,11 +73,14 @@ color: rgb(5, 5, 5); /* Hover text color */
   position: absolute;
   z-index: -5;
   
+  
 }
 .navbar-toggler {
   margin-left: 85%;
 }
-
+.navbar-nav .nav-item{
+  color: white;
+}
 .navbar-nav .dropdown-menu {
   text-align: center;
   }
@@ -617,6 +620,8 @@ width: 100%;
 .expand-btn {
   font-size: 20px; /* Reduced button size */
   padding: 8px 16px; /* Smaller padding on the button */
+  background-color: #969799;
+  color: rgb(52, 49, 49);
 }
 /* Optional: Hover effect */
 .expand-btn:hover {
@@ -642,10 +647,10 @@ width: 100%;
   display: flex;
 }
 .text-button-container {
-  background-color: #1c1c1c; /* Dark background for the entire block */
+  background-color: #B7B7B7; /* Dark background for the entire block */
   padding: 10px 20px;
   border-radius: 10px;
-  color: #ffffff;
+  color: rgb(41, 39, 39);
   width: 50%;
 }
 
@@ -795,8 +800,8 @@ width: 100%;
 
 .country-section {
 padding: 50px 0;
-background: linear-gradient(#0094B5 30%,#000000 75%,#000000 100%);;
-color:white;
+background: linear-gradient(to bottom, #0094B5, #CAF4FF);
+color:rgb(41, 39, 39);
 
 }
 .country-container-text{
