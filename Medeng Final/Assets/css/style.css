@@ -568,7 +568,7 @@ width: 100%;
 /* Hero section with image and gradient overlay */
 .hero {
   position: relative;
-  background: url('../../Assets/images/aboutus.png') no-repeat center center; 
+  background: url('../../Assets/images/aboutus.png') no-repeat center center;
   background-size: cover; 
   height: 700px;
   display: flex;
@@ -584,8 +584,8 @@ width: 100%;
   top: 0;
   left: 0;
   width: 100%;
-  height: 120%;
-  background: linear-gradient(180deg, #0094B5, #000000);
+  height: 700px;
+  background: linear-gradient(to bottom, #0094B5, #CAF4FF);
   opacity: 0.8; /* Adjust the opacity */
   z-index: 1;
 }
@@ -702,7 +702,7 @@ width: 100%;
 .service-number {
   font-size: 2.5em;
   color: #00e1ff;
-  margin-right: 20px;
+  margin-right: 40px;
   position: relative;
   width: 50px;
   text-align: center;
