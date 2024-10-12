@@ -23,13 +23,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
 </head>
-<body style="background-color: #000000;">
+<body >
 
     <!-- MedEng Logo (outside of the navbar) -->
     <div class="container d-flex justify-content-left align-items-left mt-1 bg-transparent fixed-top navbar-container">
         <span class="MedEng-Logo"><img style="max-width: 180px;" src="./Assets/images/logoNew1.png" alt="logo"></span>
         
-        <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
+        <nav class="navbar navbar-expand-lg custom-navbar fixed-top" style="color: black;">
             <div class="container custom-container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -49,7 +49,7 @@
                         </li>
                         <li class="nav-item ms-5"><a class="nav-link" href="./ContactUs.html">CONTACT US</a></li>
                     </ul>
-                </div>
+                </div> 
             </div>
         </nav>
     </div>
@@ -58,9 +58,12 @@
     <section id="home" class="text-light text-left custom-home py-5 position-relative">
         <div class="container pt-5 hero-custom-container d-flex flex-column flex-lg-row">
             <div class="hero-container-text">
-                <h1>We Help to <span style="color:#00F0FF;">Build</span></h1>
+                <div style="text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);">
+                    <h1>We Help to <span style="color:#00F0FF;">Build</span></h1>
                 <h1>Your Dream</h1>
-                <p class="lead">We help students to make their dream of studying abroad a reality.</p>
+                </div>
+                
+                <p class="lead" style="color: rgb(41, 39, 39);">We help students to make their dream of studying abroad a reality.</p>
                 <a href="./ContactUs.html" class="btn btn-outline-light btn-lg custom-hero-btn">Contact Us</a>
             </div>
             <div class="mt-5 hero-container-image" id="title-image">
@@ -70,41 +73,41 @@
     </section>
 
     <!-- About Us Section -->
-    <section id="about-us" class="py-5 text-light text-center about-us">
+    <section id="about-us" class="py-5 text-light text-center about-us" >
         <div class="container">
-            <h2 class="display-5">About Us</h2>
-            <p class="lead"><span style="font-weight: bold; color: #00F0FF;">MedEng Education Consultancy Pvt Ltd</span> is a Reputed education consultancy firm, offering comprehensive guidance for international education opportunities</p>
-            <a href="./AboutUs.html" class="btn more-button">More <img class="arrow" src="assets/images/Forward Arrow.png" /></a>
+            <h2 class="display-5" style="color: rgb(41, 39, 39); text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);" >About Us</h2>
+            <p class="lead" style="color: rgb(41, 39, 39);"><span style="font-weight: bold; color: #0a6b76;" >MedEng Education Consultancy Pvt Ltd</span> is a Reputed education consultancy firm, offering comprehensive guidance for international education opportunities</p>
+            <a href="./AboutUs.html" class="btn more-button bg-dark">More <img class="arrow" src="assets/images/Forward Arrow.png" /></a>
         </div>
     </section>
 
-    <!-- What We Are Offering Section -->
-    <section id="services" class="py-5">
+<!-- What We Are Offering Section -->
+    <section id="services" class="py-5 white-bg">
         <div class="container">
-            <h2 class="display-5 mb-5">What we are offering</h2>
+            <h2 class="display-5 mb-5" style="text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);;">What we are offering</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <div class="service-card bg-dark text-light mb-4 p-3">
+                    <div class="service-card text-light mb-4 p-3" style="background-color:  #B9B4C7;">
                         <div class="align-items-center">
                             <div class="icon-container">
                                 <img src="assets/icons/customer-service-icon.png" alt="Customer Service Icon" class="service-icon">
                             </div>
                             <div class="ms-3 text-left">
-                                <h3 class="card-title">Customer Service</h3>
-                                <p class="card-text">We offer expert guidance to help students select the right academic programs, manage applications, and navigate the student visa process.</p>
+                                <h3 class="card-title"  style="color: rgba(41, 39, 39)">Customer Service</h3>
+                                <p class="card-text" style="color: black;">We offer expert guidance to help students select the right academic programs, manage applications, and navigate the student visa process.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="service-card bg-dark text-light mb-4 p-3">
+                    <div class="service-card text-light mb-4 p-3" style="background-color: #B9B4C7;">
                         <div class="align-items-center">
                             <div class="icon-container rounded-icon">
                                 <img src="assets/icons/trusted-service-icon.png" alt="Trusted Service Icon" class="service-icon">
                             </div>
                             <div class="ms-3 text-left">
-                                <h3 class="card-title">Trusted Service</h3>
-                                <p class="card-text">Our reliable service starts from the very beginning to ensure efficiency for you.</p>
+                                <h3 class="card-title" style="color: rgba(41, 39, 39)">Trusted Service</h3>
+                                <p class="card-text" style="color: black;">Our reliable service starts from the very beginning to ensure efficiency for you.</p>
                             </div>
                         </div>
                     </div>
@@ -114,46 +117,45 @@
     </section>
 
     <!-- Choose Your Dream Destination Section -->
-<section class="black-bg text-white py-5 centered" id="dream-dest">
+<section class="black-bg text-white py-5 centered" id="dream-dest" style="background: linear-gradient(to bottom, #ffffff, #CAF4FF);">
     <div class="container destination-container">
-        <h2 class="display-6">Choose Your Dream Destination</h2>
+        <h2 class="display-6" style="text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);">Choose Your Dream Destination</h2>
     </div>
 
-    <div id="testimonials-carousel" class="carousel slide">
-      <div class="carousel-inner">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item" data-bs-interval="3000">
+            <div class="card mx-auto">
+                <img src="./Assets/images/Finland.png" alt="Slide 1" class="card-image">
+                <div class="card-content">
+                    <h3 style="color: rgb(41, 39, 39); font-size: 1.5rem;"><b>Finland</b></h3>
+                    <a href="./Finland.html" class="card-button" id="carou-btn2">Learn More</a>
+                </div>
+            </div>
+            
+          </div>
 
-        <div class="carousel-item active container-fluid item">
-
-          <div class="card mx-auto">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <div class="card mx-auto">
             <img src="assets/images/England.png" alt="Slide 1" class="card-image">
             <div class="card-content">
-                <h3>United Kingdom</h3>
+                <h3 style="color: rgb(41, 39, 39); font-size: 1.5rem;"><b>United Kingdom</b></h3>
                 <a href="./England.html" class="card-button" id="carou-btn1">Learn More</a>
             </div>
           </div>
-        </div>
-
-        <div class="carousel-item container-fluid item">
-
-          <div class="card mx-auto">
-            <img src="./Assets/images/Finland.png" alt="Slide 1" class="card-image">
-            <div class="card-content">
-                <h3>Finland</h3>
-                <a href="./Finland.html" class="card-button" id="carou-btn2">Learn More</a>
-            </div>
           </div>
-        </div>
+          
 
- 
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#testimonials-carousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      
-      <button class="carousel-control-next" type="button" data-bs-target="#testimonials-carousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
-    </div>  
 
   </section>
 
@@ -162,11 +164,11 @@
     <!-- Why MedEng Section -->
     <section id="why-medeng" class="py-5 text-center">
         <div class="container">
-            <h2 class="display-5">Why MedEng?</h2>
+            <h2 class="display-5" style="text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);">Why MedEng?</h2>
             <p class="lead subtitle">Study overseas with us as we guide you through the right path.</p>
             <div class="row mt-4">
                 <div class="col-md-6">
-                <p class="text-start text">
+                <p class="text-start text" style="color: #3C3D37;">
                     <span style="font-weight: bold; color: #00F0FF;">MedEng Education Consultancy Pvt Ltd</span> is a world-renowned expert in student counselling,
                     specializing in international education and study abroad opportunities. Our mission is to help
                     students turn their aspirations of studying overseas into reality. As a prestigious Educational Visa
@@ -175,7 +177,7 @@
                 </p>
                 </div>
                 <div class="col-md-6">
-                    <img src="assets/images/logoNew1.png" class="img-fluid" alt="Why MedEng `aq" style="width: 100%;height: 100%;margin-top: -20px;">
+                    <img src="assets/images/logoNew1.png"  class="img-fluid" alt="Why MedEng `aq" style="width: 100%;height: 100%;margin-top: -20px;">
                 </div>
             </div>
         </div>
@@ -211,34 +213,34 @@
     <section id="consultation" class="py-5 text-left">
         <div class="container d-flex align-items-center justify-content-between consultation-container">
             <div class="consultation-content">
-                <h2>Start climbing your career ladder with us</h2>
-                <a href="./ContactUs.html" class="btn consultation-btn">Book Consultation</a>
+                <h2 style="color: rgb(41, 39, 39); text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);">Start climbing your career ladder with us</h2>
+                <a href="./ContactUs.html" class="btn bg-dark consultation-btn">Book Consultation</a>
             </div>
             <div>
-                <img src="assets/images/help.png" alt="help" class="consultation-img">
+                <img src="assets/images/help.png" alt="help" class="consultation-img" >
             </div>
         </div>
     </section>
 
     <!-- Footer Section -->
-    <footer class="text-white py-4" style="background: linear-gradient(to bottom, #000000, #0094B5);padding-top: 50px;">
-        <div class="container">
+    <footer class="text-white py-4" style="background: linear-gradient(to bottom, #CAF4FF, #0094B5);padding-top: 50px;">
+        <div class="container" style="color: rgb(41, 39, 39);">
             <img src="./Assets/images/logoNew1.png" alt="Logo" class="img-fluid me-2 footer-logo" style="width: 180px;margin-left: -45px;"> 
-            <div class="row">
+            <div class="row" >
                 <div class="col-lg-4 col-md-6 mb-4">
                     <ul class="list-unstyled">
-                        <li><a href="./AboutUs.html" class="text-white">About Us</a></li>
-                        <li><a href="#" class="text-white">Our Services</a></li>
-                        <li><a href="./ContactUs.html" class="text-white">Contact</a></li>
+                        <li><a href="./AboutUs.html" style="color: rgb(41, 39, 39);">About Us</a></li>
+                        <li><a href="#" style="color: rgb(41, 39, 39);">Our Services</a></li>
+                        <li><a href="./ContactUs.html" style="color: rgb(41, 39, 39);">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <h5><i class="fa-solid fa-phone" style="color:  #00ffae;"></i> +447398826484</h5>
-                    <h5><i class="fa-brands fa-whatsapp" style="color:  #00ffae;"></i> +447398826484</h5>
-                    <h5><i class="fa fa-envelope-o" style="color: #00ffae;"></i> info@medeng.co.uk</h5>
-                    <h5><i class="fa fa-envelope-o" style="color: #00ffae;"></i> info@parthtouk.com</h5>
+                    <h5><i class="fa-solid fa-phone" style="color:  #025339;"></i> +447398826484</h5>
+                    <h5><i class="fa-brands fa-whatsapp" style="color:  #025339;"></i> +447398826484</h5>
+                    <h5><i class="fa fa-envelope-o" style="color: #025339;"></i> info@medeng.co.uk</h5>
+
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
+                <div class="col-lg-4 col-md-6 mb-4" >
                     <h5>Home Office</h5>
                     <address>
                         67 Langney Road,<br>
@@ -251,9 +253,9 @@
             </div>
             <div class="row mt-4">
                 <div class="col text-center">
-                    <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-dark me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-dark me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-dark"><i class="bi bi-twitter"></i></a>
                 </div>
             </div>
             <div class="row mt-3">

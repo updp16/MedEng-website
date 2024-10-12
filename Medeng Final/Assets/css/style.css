@@ -7,12 +7,19 @@ body, html {
 }
 
 .custom-home{
-  background-image: linear-gradient(#0094B5, rgba(0, 0, 0));
+  background: linear-gradient(to bottom, #0094B5, #CAF4FF);
 }
 
 ul i{
  margin-right: 5px;
 }
+
+/* .white-bg{
+  background-color: #ffffff;
+}
+.skyBlue-bg{
+  background-color: #CAF4FF;
+} */
 
 /* Navbar adjustments */
 .custom-navbar {
@@ -46,7 +53,7 @@ ul i{
 background-color: rgba(255, 255, 255, 0.1); /* Slight transparency */ 
 }
 .navbar-nav .dropdown-menu .dropdown-item {
-color: white; /* Black text color for dropdown items */
+color: rgb(0, 0, 0); /* Black text color for dropdown items */
 }
 .navbar-nav .dropdown-menu .dropdown-item:hover {
 background-color: #0094B5; /* Hover background */
@@ -133,7 +140,7 @@ color: rgb(5, 5, 5); /* Hover text color */
 
 /* About Us */
 .about-us{
-  background-color: #000000;
+  background-color: #CAF4FF;
 }
 .about-us h2{
   font-family: 'almarai-bold', sans-serif;
@@ -199,8 +206,8 @@ width: 100%;
 }
 /* Services */
 #services {
-  background-color: #000 !important;
   padding: 50px 0;
+  background: linear-gradient(to bottom, #CAF4FF, #ffffff);
 }
 .service-card {
   height: 250px;
@@ -250,7 +257,7 @@ width: 100%;
   font-family: 'almarai-bold', sans-serif;
   text-align: center;
   font-size: 60px;
-  color: white;
+  color: rgb(41, 39, 39);
 }
 #services .card-text {
   font-family: 'Almarai-Regular', sans-serif;
@@ -265,24 +272,22 @@ width: 100%;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #000000;
   width: 100%;
 }
 .destination-container h2{
   font-family: 'almarai-bold', sans-serif;
   font-size: 60px;
-  color: white;
+  color: rgb(41, 39, 39);
   margin-bottom: 40px;
 }
 .card {
-  background: #222;
+  background: #B9B4C7;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   text-align: center;
   height: 50%;
   width:50%;
-  color: #fff;
   box-shadow: 0vmax;
 }
 
@@ -311,9 +316,8 @@ width: 100%;
   display: inline-block;
   padding: 8px 12px;
   margin-top: 10px;
-  background-color: #008ac000;
-  color: rgb(255, 255, 255);
-  border: 1px solid white;
+  color: rgb(41, 39, 39);
+  border: 1px solid rgb(10, 10, 10);
 
   border-radius: 5px;
   text-decoration: none;
@@ -342,9 +346,9 @@ width: 100%;
 
 /* Why MedEng Section */
 #why-medeng{
-  background-color: #000000;
+  background-color: #CAF4FF;
   width: 100%;
-  color: white;
+  color: rgb(41, 39, 39);
   font-family: 'almarai-bold', sans-serif;
 }
 #why-medeng h2{
@@ -405,7 +409,8 @@ width: 100%;
 
 /* Consultation */
 #consultation {
-  background-color: #000000;
+  /* background: linear-gradient(to bottom, #CAF4FF, #0094B5); */
+  background-color: #CAF4FF;
   width: 100%;
   color: white;
   font-family: 'almarai-bold', sans-serif;
@@ -595,9 +600,7 @@ width: 100%;
 
 
 /* About Section */
-.black-bg{
-  background-color: #000;
-}
+
 .about p {
   max-width: 800px;
   margin: 0;
