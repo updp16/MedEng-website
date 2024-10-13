@@ -60,7 +60,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         loadingSpinner.style.display = 'block';
 
         // Send the email using EmailJS
-        emailjs.send("service_onppsxh", "template_9b66tuj", params)
+        emailjs.send("service_oxujuxd", "template_b6l45cr", params)
             .then(function(response) {
                 alert('SUCCESS! Email sent to the MedEng.');
 
