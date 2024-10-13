@@ -36,12 +36,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
 </head>
 
-<body style="background-color: #000000;">
+<body>
     <!--MedEng Logo (outside of the navbar) -->
     <div class="container d-flex justify-content-left align-items-left mt-1 bg-transparent fixed-top navbar-container">
       <span class="MedEng-Logo"><img style="max-width: 180px;" src="./Assets/images/logoNew1.png" alt="logo"></span>
     
-      <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+      <nav class="navbar navbar-expand-lg custom-navbar">
           <div class="container custom-container">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -69,109 +69,107 @@
     <!-- Hero Section with Image and Gradient Overlay -->
     <section class="hero2 d-flex align-items-center ">
       <div class="container text-center text-white hero-container-text-aboutPg" style="max-width: 1200px;">
-        <h1 style="font-size: 4.375rem; font-family: 'almarai-extrabold', sans-serif; color:white; font-weight: 600;">Let's Talk</h1>
-        <h4>Please fill out the form below to get in touch with us.</h4>
+        <h1 style="font-size: 4.375rem; font-family: 'almarai-extrabold', sans-serif; color:white; font-weight: 600; text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);">Let's Talk</h1>
+        <h4 style="color: rgb(41, 39, 39)">Please fill out the form below to get in touch with us.</h4>
       </div>
     </section>
 
     <!-- Contact Form Section -->
-    <section class="contact-section text-white py-5 centered black-bg" id="#contact">
+    <section class="contact-section text-white py-5 centered" id="#contact" style="background-color:  #CAF4FF;">
       <div class="custom-form mx-auto">
         <h3>Please Fill This Form</h3>
-        <h5>One of our team members will connect with you ASAP.</h5>
+        <h5 style="color: rgb(41, 39, 39);">One of our team members will connect with you ASAP.</h5>
     
         <form class="contactUs-form" id="contact-form">
-            <!-- Full Name -->
-            <div class="mb-3">
-                <label for="fullName" class="form-label">Full Name</label>
-                <div class="row">
-                    <div class="col-12 col-md-6 mb-3 mb-md-0">
-                        <input type="text" class="form-control" id="first-name" placeholder="First Name">
-                        <small id="first-name-error" class="text-danger" style="display:none;">First Name is required.</small>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <input type="text" class="form-control" id="last-name" placeholder="Last Name">
-                        <small id="last-name-error" class="text-danger" style="display:none;">Last Name is required.</small>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Email -->
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
-                <small id="email-error" class="text-danger" style="display:none;">Valid Email is required.</small>
-            </div>
-    
-            <!-- Mobile Number -->
-            <div class="mb-3">
-                <label for="email" class="form-label">Mobile Number</label>
-                <input type="text" class="form-control" id="phone" placeholder="Mobile No*">
-                <small id="phone-error" class="text-danger" style="display:none;">Mobile Number is required.</small>
-            </div>
-    
-            <!-- Message -->
-            <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" rows="5" placeholder="Your message here..."></textarea>
-                <small id="message-error" class="text-danger" style="display:none;">Message is required.</small>
-            </div>
-    
-            <!-- Google reCAPTCHA -->
-            <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY_HERE"></div>
-            <small id="recaptcha-error" class="text-danger" style="display:none;">Please verify you're not a robot.</small>
-
-            <!-- Submit Button -->
-            <button id="submit-btn" type="submit" class="btn custom-button mx-auto" style="display: flex;">
-                <span class="mx-auto">Submit</span>
-            </button>
-        </form>
+          <!-- Full Name -->
+          <div class="mb-3">
+              <label for="fullName" class="form-label">Full Name</label>
+              <div class="row">
+                  <div class="col-12 col-md-6 mb-3 mb-md-0">
+                      <input type="text" class="form-control" id="first-name" placeholder="First Name">
+                      <small id="first-name-error" class="text-danger" style="display:none;">First Name is required.</small>
+                  </div>
+                  <div class="col-12 col-md-6">
+                      <input type="text" class="form-control" id="last-name" placeholder="Last Name">
+                      <small id="last-name-error" class="text-danger" style="display:none;">Last Name is required.</small>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Email -->
+          <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
+              <small id="email-error" class="text-danger" style="display:none;">Valid Email is required.</small>
+          </div>
+  
+          <!-- Mobile Number -->
+          <div class="mb-3">
+              <label for="email" class="form-label">Mobile Number</label>
+              <input type="text" class="form-control" id="phone" placeholder="Mobile No*">
+              <small id="phone-error" class="text-danger" style="display:none;">Mobile Number is required.</small>
+          </div>
+  
+          <!-- Message -->
+          <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Your message here..."></textarea>
+              <small id="message-error" class="text-danger" style="display:none;">Message is required.</small>
+          </div>
+  
+          <!-- Submit Button -->
+          <button id="submit-btn" type="submit" class="btn custom-button mx-auto" style="display: flex;">
+              <span id="submit-text" class="mx-auto">Submit</span>
+              <span id="loading-spinner" class="mx-auto" style="display:none;">
+                  <i class="fas fa-spinner fa-spin"></i> <!-- Font Awesome spinner icon -->
+              </span>
+          </button>
+      </form>
     </div>
     </section>
 
     <!-- Footer Section -->
-    <footer class="text-white py-4" style="background: linear-gradient(to bottom, #000000, #0094B5);padding-top: 50px;">
-      <div class="container">
-          <img src="./Assets/images/logoNew1.png" alt="Logo" class="img-fluid me-2 footer-logo" style="width: 180px;margin-left: -45px;"> 
-          <div class="row">
-          <div class="col-lg-4 col-md-6 mb-4">
-            <ul class="list-unstyled">
-              <li><a href="./AboutUs.html" class="text-white">About Us</a></li>
-              <li><a href="#" class="text-white">Our Services</a></li>
-              <li><a href="./ContactUs.html" class="text-white">Contact</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <h5><i class="fa-solid fa-phone" style="color:  #00ffae;"></i> +447398826484</h5>
-            <h5><i class="fa-brands fa-whatsapp" style="color:  #00ffae;"></i> +447398826484</h5>
-            <h5><i class="fa fa-envelope-o" style="color: #00ffae;"></i> info@medeng.co.uk</h5>
-            <h5><i class="fa fa-envelope-o" style="color: #00ffae;"></i> info@parthtouk.com</h5>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <h5>Corporate Office</h5>
-            <address>
-              67 Langney Road,<br>
-              Eastbourne,<br>
-              East Sussex, <br>
-              England <br>
-              BN213QD
-            </address>
-          </div>
+    <footer class="text-white py-4" style="background: linear-gradient(to bottom, #CAF4FF, #0094B5);padding-top: 50px;">
+        <div class="container" style="color: rgb(41, 39, 39);">
+            <img src="./Assets/images/logoNew1.png" alt="Logo" class="img-fluid me-2 footer-logo" style="width: 180px;margin-left: -45px;"> 
+            <div class="row" >
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <ul class="list-unstyled">
+                        <li><a href="./AboutUs.html" style="color: rgb(41, 39, 39);">About Us</a></li>
+                        <li><a href="#" style="color: rgb(41, 39, 39);">Our Services</a></li>
+                        <li><a href="./ContactUs.html" style="color: rgb(41, 39, 39);">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5><i class="fa-solid fa-phone" style="color:  #025339;"></i> +447398826484</h5>
+                    <h5><i class="fa-brands fa-whatsapp" style="color:  #025339;"></i> +447398826484</h5>
+                    <h5><i class="fa fa-envelope-o" style="color: #025339;"></i> info@medeng.co.uk</h5>
+
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" >
+                    <h5>Corporate Office</h5>
+                    <address>
+                        67 Langney Road,<br>
+                        Eastbourne,<br>
+                        East Sussex,<br>
+                        England<br>
+                        BN213QD
+                    </address>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <a href="#" class="text-dark me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-dark me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-dark"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col text-center">
+                    <p>© 2024 MedEng</p>
+                </div>
+            </div>
         </div>
-        <div class="row mt-4">
-          <div class="col text-center">
-            <!-- Social Links -->
-            <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
-          </div>
-        </div>
-        <div class="row mt-3">
-          <div class="col text-center">
-            <p>© 2024 MedEng</p>
-          </div>
-        </div>
-      </div>
     </footer>
 
     <!-- GSAP Animations -->

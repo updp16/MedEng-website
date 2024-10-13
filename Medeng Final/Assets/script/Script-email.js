@@ -1,4 +1,3 @@
-
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent default form submission
     
@@ -51,14 +50,34 @@ document.getElementById('contact-form').addEventListener('submit', function(even
             to_email: email
         };
 
+        // Disable the submit button and show the loading spinner
+        const submitBtn = document.getElementById('submit-btn');
+        const submitText = document.getElementById('submit-text');
+        const loadingSpinner = document.getElementById('loading-spinner');
+
+        submitBtn.disabled = true;
+        submitText.style.display = 'none';
+        loadingSpinner.style.display = 'block';
+
+        // Send the email using EmailJS
         emailjs.send("service_onppsxh", "template_9b66tuj", params)
             .then(function(response) {
-                alert('SUCCESS! Email sent to the user.');
+                alert('SUCCESS! Email sent to the MedEng.');
 
                 // Clear the form after successful submission
                 document.getElementById('contact-form').reset();
+
+                // Re-enable the submit button and hide the spinner
+                submitBtn.disabled = false;
+                submitText.style.display = 'block';
+                loadingSpinner.style.display = 'none';
             }, function(error) {
                 alert('FAILED... ' + JSON.stringify(error));
+
+                // Re-enable the submit button and hide the spinner
+                submitBtn.disabled = false;
+                submitText.style.display = 'block';
+                loadingSpinner.style.display = 'none';
             });
     }
 });

@@ -77,7 +77,7 @@
         <div class="container">
             <h2 class="display-5" style="color: rgb(41, 39, 39); text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);" >About Us</h2>
             <p class="lead" style="color: rgb(41, 39, 39);"><span style="font-weight: bold; color: #0a6b76;" >MedEng Education Consultancy Pvt Ltd</span> is a Reputed education consultancy firm, offering comprehensive guidance for international education opportunities</p>
-            <a href="./AboutUs.html" class="btn more-button bg-dark">More <img class="arrow" src="assets/images/Forward Arrow.png" /></a>
+            <a href="./AboutUs.html" class="btn more-button">More <img class="arrow" src="assets/images/Forward Arrow.png" /></a>
         </div>
     </section>
 
@@ -85,7 +85,7 @@
     <section id="services" class="py-5 white-bg">
         <div class="container">
             <h2 class="display-5 mb-5" style="text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);;">What we are offering</h2>
-            <div class="row">
+            <div class="row serviceCard-row">
                 <div class="col-md-6">
                     <div class="service-card text-light mb-4 p-3" style="background-color:  #B9B4C7;">
                         <div class="align-items-center">
@@ -128,7 +128,7 @@
             <div class="card mx-auto">
                 <img src="./Assets/images/Finland.png" alt="Slide 1" class="card-image">
                 <div class="card-content">
-                    <h3 style="color: rgb(41, 39, 39); font-size: 1.5rem;"><b>Finland</b></h3>
+                    <h3 style="color: rgb(41, 39, 39);"><b>Finland</b></h3>
                     <a href="./Finland.html" class="card-button" id="carou-btn2">Learn More</a>
                 </div>
             </div>
@@ -139,7 +139,7 @@
             <div class="card mx-auto">
             <img src="assets/images/England.png" alt="Slide 1" class="card-image">
             <div class="card-content">
-                <h3 style="color: rgb(41, 39, 39); font-size: 1.5rem;"><b>United Kingdom</b></h3>
+                <h3 style="color: rgb(41, 39, 39)"><b>United Kingdom</b></h3>
                 <a href="./England.html" class="card-button" id="carou-btn1">Learn More</a>
             </div>
           </div>
@@ -169,7 +169,7 @@
             <div class="row mt-4">
                 <div class="col-md-6">
                 <p class="text-start text" style="color: #3C3D37;">
-                    <span style="font-weight: bold; color: #00F0FF;">MedEng Education Consultancy Pvt Ltd</span> is a world-renowned expert in student counselling,
+                    <span style="font-weight: bold; color: #0a6b76;">MedEng Education Consultancy Pvt Ltd</span> is a world-renowned expert in student counselling,
                     specializing in international education and study abroad opportunities. Our mission is to help
                     students turn their aspirations of studying overseas into reality. As a prestigious Educational Visa
                     Consultancy, we are dedicated to matching students with the best programs, universities, and
@@ -214,7 +214,7 @@
         <div class="container d-flex align-items-center justify-content-between consultation-container">
             <div class="consultation-content">
                 <h2 style="color: rgb(41, 39, 39); text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);">Start climbing your career ladder with us</h2>
-                <a href="./ContactUs.html" class="btn bg-dark consultation-btn">Book Consultation</a>
+                <a href="./ContactUs.html" class="btn consultation-btn">Book Consultation</a>
             </div>
             <div>
                 <img src="assets/images/help.png" alt="help" class="consultation-img" >
@@ -316,19 +316,68 @@
             ease: 'power2.out',
         });
 
-        // Scroll Animations for other sections to slowly appear
-        gsap.utils.toArray('section').forEach(section => {
-            gsap.from(section, {
-                scrollTrigger: {
-                    trigger: section,
-                    start: 'top 90%',
-                    toggleActions: 'play none none none',
-                },
-                opacity: 0,
-                y: 50,
-                duration: 1.5,
-                ease: 'power2.out'
-            });
+        gsap.from('#services h2', {
+            scrollTrigger: {
+                trigger: '#services',
+                start: 'top 80%',
+            },
+            y: -50,
+            opacity: 0,
+            duration: 1.5,
+            ease: 'power2.out',
+        });
+
+        gsap.from('#services .serviceCard-row', {
+            scrollTrigger: {
+                trigger: '#services',
+                start: 'top 80%',
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1.5,
+            ease: 'power2.out',
+        });
+
+        gsap.from('#dream-dest h2', {
+            scrollTrigger: {
+                trigger: '#dream-dest',
+                start: 'top 80%',
+            },
+            y: -50,
+            opacity: 0,
+            duration: 1.5,
+            ease: 'power2.out',
+        });
+
+        gsap.from('#why-medeng h2,#why-medeng .subtitle ', {
+            scrollTrigger: {
+                trigger: '#why-medeng',
+                start: 'top 80%',
+            },
+            y: -50,
+            opacity: 0,
+            duration: 1.5,
+            ease: 'power2.out',
+        });
+        gsap.from('#why-medeng .text, #why-medeng img ', {
+            scrollTrigger: {
+                trigger: '#why-medeng',
+                start: 'top 80%',
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1.5,
+            ease: 'power2.out',
+        });
+        gsap.from('#consultation h2,#consultation img ', {
+            scrollTrigger: {
+                trigger: '#consultation',
+                start: 'top 80%',
+            },
+            y: -50,
+            opacity: 0,
+            duration: 1.5,
+            ease: 'power2.out',
         });
     </script>
 

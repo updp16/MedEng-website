@@ -35,6 +35,10 @@ ul i{
  backdrop-filter: blur(10px);
 }
 
+.navbar-container{
+  margin-left: 160px;
+}
+
 
 /* Center the navbar items */
 .custom-container {
@@ -69,7 +73,6 @@ color: rgb(5, 5, 5); /* Hover text color */
 .custom-navbar{
   width: 100%;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   z-index: -5;
   
@@ -128,14 +131,14 @@ color: rgb(5, 5, 5); /* Hover text color */
   width: 150px;
   font-family: 'almari-bold', sans-serif;
   font-weight: 600;
-  color: black;
-  background-color: white;
+  color: rgb(248, 246, 246);
+  background-color: rgb(60, 56, 56);
   border-radius: 45px;
-  border: 2px solid white;
+  border: 1px solid rgb(62, 60, 60);
 }
 .custom-hero-btn:hover{
-  color: rgb(255, 255, 255);
-  background-color: rgba(255, 255, 255, 0);
+  color: rgb(0, 0, 0);
+  background-color: rgba(195, 186, 186);
   border: 2px solid white;
 }
 
@@ -156,7 +159,7 @@ color: rgb(5, 5, 5); /* Hover text color */
 .more-button{
   font-family: 'almarai-bold', sans-serif;
   color: white;
-  background-color: black;
+  background-color:  rgb(41, 39, 39);
   border-radius: 45px;
   border-color: white;
   width: 200px;
@@ -166,8 +169,8 @@ color: rgb(5, 5, 5); /* Hover text color */
 }
 .more-button:hover{
   color:rgb(0, 0, 0);
-  background-color: rgba(255, 255, 255, 0.993);
-  border: 2px solid white;
+  background-color: rgb(131, 120, 120);
+  border: 2px solid rgb(182, 179, 179);
 }
 
 .arrow {
@@ -319,8 +322,9 @@ width: 100%;
   display: inline-block;
   padding: 8px 12px;
   margin-top: 10px;
-  color: rgb(41, 39, 39);
-  border: 1px solid rgb(10, 10, 10);
+  background-color: #454646;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(46, 46, 46);
 
   border-radius: 5px;
   text-decoration: none;
@@ -329,19 +333,25 @@ width: 100%;
 }
 
 #carou-btn1.card-button:hover,#carou-btn2.card-button:hover {
-  background-color: rgb(65, 65, 65);
-  color: #fff;
+  background-color: rgb(231, 231, 231,0.5);
+  color: #000000;
 }
 
 #carou-btn1.card-button,
 #carou-btn2.card-button {
   width: 20%;
 }
-
+#dream-dest h3{
+  font-size: 1.5rem;
+}
 @media (max-width: 576px) {
   #carou-btn1.card-button,
   #carou-btn2.card-button {
   width: 90%;
+  }
+
+  #dream-dest h3{
+    font-size: 1.2rem;
   }
 }
 
@@ -452,7 +462,7 @@ width: 100%;
 }
 .consultation-btn:hover {
   color: rgb(0, 0, 0);
-  background-color: rgba(255, 255, 255, 0.993);
+  background-color: rgb(165, 165, 165);
   border: 2px solid white;
 }
 
@@ -707,7 +717,7 @@ width: 100%;
 .service-number {
   font-size: 2.5em;
   color: #00e1ff;
-  margin-right: 40px;
+  margin-left: 30px;
   position: relative;
   width: 50px;
   text-align: center;
@@ -737,6 +747,7 @@ width: 100%;
 .service-content {
   flex-grow: 1;
   text-align: left;
+  margin-left: 60px;
 }
 
 .service-content h3 {
@@ -991,7 +1002,7 @@ color: #d3d3d3;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, #0094B5, #000000);
+  background: linear-gradient(to bottom, #0094B5, #CAF4FF);
   opacity: 0.8; /* Adjust the opacity */
   z-index: -1;
 }
@@ -1002,10 +1013,10 @@ color: #d3d3d3;
 }
 
 .custom-form {
-  background-color: #1c1c1c; /* Black background with transparency */
+  background-color: #B7B7B7; /* Black background with transparency */
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5); /* Subtle shadow */
   width: 60%;
   transform: translateY(-100px);
   z-index: 3;
@@ -1017,7 +1028,7 @@ text-align: left;
 
 /* Headline styling */
 .custom-form h3 {
-  color: white;
+  color: rgb(41, 39, 39);
   text-align: center;
   margin-bottom: 20px;
 }
@@ -1027,22 +1038,22 @@ text-align: center;
 
 /* Input field labels */
 .form-label {
-  color: white;
+  color: black;
 }
 /* Placeholder text color */
 ::placeholder {
-  color: #ccc;
+  color: #2b2727;
 }
 
 
 /* Button hover effect */
 #submit-btn.custom-button{
-  color: white; background-color: #3f3c3c; border: 2px solid white; border-radius: 50px;
+  color: rgb(0, 0, 0); background-color: #9e9898; border: 2px solid rgb(82, 81, 81); border-radius: 50px;
 }
 
 #submit-btn.custom-button:hover {
-  background-color: white;
-  color: black;
+  background-color: rgb(44, 42, 42);
+  color: rgb(255, 255, 255);
   border: 2px solid black;
 }
 /* Input field styles */

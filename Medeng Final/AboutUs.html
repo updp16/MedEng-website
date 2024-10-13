@@ -68,7 +68,7 @@
   <!-- Hero Section with Image and Gradient Overlay -->
   <section class="hero d-flex align-items-center">
     <div class="container text-center text-white hero-container-text-aboutPg container-hero" style="padding-top: 100px;">
-      <h1 class="hero-title" style="font-size: 4.375rem; font-family: 'almarai-extrabold', sans-serif; color:rgb(41, 39, 39); font-weight: 600; text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);">Welcome to MedEng</h1>
+      <h1 class="hero-title" style="font-size: 4.375rem; font-family: 'almarai-extrabold', sans-serif; color:rgb(255, 255, 255); font-weight: 600; text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);">Welcome to MedEng</h1>
       <span class="MedEng-logo-about"><img src="./Assets/images/logoNew1.png" alt="logo"></span>
     </div>
   </section>
@@ -284,9 +284,9 @@
             ease: 'power2.out',
         });
 
-        gsap.from('.about h2, why-us h2', {
+        gsap.from('.about h2', {
             scrollTrigger: {
-                trigger: '.about, .why-us',
+                trigger: '.about',
                 start: 'top 80%',
             },
             y: -50,
